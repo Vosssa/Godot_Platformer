@@ -36,7 +36,7 @@ func _on_player_detection_body_exited(body):
 		chase = false
 
 func _on_mob_death_body_entered(body):
-	if body.name == "Player" && self.position.y > get_node("../../Player/Player").position.y:
+	if body.name == "Player" && self.position.y < get_node("../../Player/Player").position.y:
 		death()
 
 func _on_player_collision_body_entered(body):
