@@ -40,6 +40,8 @@ func _on_mob_death_body_entered(body : Node2D):
 		player = get_node("../../Player/Player")
 		if not player.is_on_floor():
 			death();
+			player.velocity.y = player.JUMP_VELOCITY
+
 func _on_player_collision_body_entered(body):
 	if body.name == "Player":
 		Game.playerHP -= 3
