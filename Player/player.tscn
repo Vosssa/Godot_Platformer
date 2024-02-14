@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://ctk8nkmki5qan"]
+[gd_scene load_steps=27 format=3 uid="uid://ctk8nkmki5qan"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_8t3ar"]
 [ext_resource type="Texture2D" uid="uid://7kng5sn7g24n" path="res://Sunny-land-files/Graphical Assets/sprites/player/hurt/player-hurt-1.png" id="2_80i8j"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://rruqjyfvyhl1" path="res://Sunny-land-files/Graphical Assets/sprites/player/run/player-run-4.png" id="13_lf1yn"]
 [ext_resource type="Texture2D" uid="uid://bla6a5g6uj2ve" path="res://Sunny-land-files/Graphical Assets/sprites/player/run/player-run-5.png" id="14_ab51n"]
 [ext_resource type="Texture2D" uid="uid://hyompssume7o" path="res://Sunny-land-files/Graphical Assets/sprites/player/run/player-run-6.png" id="15_qggjn"]
+[ext_resource type="PackedScene" uid="uid://bx5468g1jtfxe" path="res://dash.tscn" id="18_ynrs5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hdofp"]
 radius = 7.0
@@ -256,3 +257,5 @@ libraries = {
 "": SubResource("AnimationLibrary_ti6t0")
 }
 autoplay = "Idle"
+
+[node name="Dash" parent="." instance=ExtResource("18_ynrs5")]
